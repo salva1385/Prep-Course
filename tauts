@@ -1,0 +1,19 @@
+[33mcommit 36129fbf274bb44172b9d141241c75dbe41932f8[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: salva1385 <salvadorgiacobbe@gmail.com>
+Date:   Tue Jan 25 23:11:01 2022 -0300
+
+    respuestas
+
+[1mdiff --git a/02-JS-I/homework/homework.js b/02-JS-I/homework/homework.js[m
+[1mindex 3c92ac9..9978f72 100644[m
+[1m--- a/02-JS-I/homework/homework.js[m
+[1m+++ b/02-JS-I/homework/homework.js[m
+[36m@@ -1,7 +1,7 @@[m
+ // En estas primeras 6 preguntas, reemplaza `null` por la respuesta[m
+ [m
+ // Crea una variable "string", puede contener lo que quieras:[m
+[31m-const nuevaString = null;[m
+[32m+[m[32mconst nuevaString = "hello word";[m
+ [m
+ // Crea una variable numérica, puede ser cualquier número:[m
+ const nuevoNum = null;[m
