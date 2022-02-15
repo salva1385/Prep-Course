@@ -74,21 +74,22 @@ function colors(color) {
   //Usar el statement Switch.
   switch (color) {
     case 'blue':
-      return "This is blue"
+      return "This is blue";
      
     case 'red':
-      return "This is red"
+      return "This is red";
       
     case 'green':
-      return "This is green"
+      return "This is green";
       
     case 'orange':
-      return "This is orange"
+      return "This is orange";
       
     default:
-      return  "color not found " 
+      return  "Color not found";
   }  
 }
+
 
 function esDiezOCinco(numero) {
   // Devuelve "true" si "numero" es 10 o 5
@@ -155,13 +156,6 @@ function operadoresLogicos(num1, num2, num3) {
   //0 no es ni positivo ni negativo. Si alguno de los argumentos es 0, retornar "Error".
   //Si no se cumplen ninguna de las condiciones anteriores, retornar false. 
 
-if (num1 > num2 || num1> num3){
-  return "numero 1 es mayor y positivo"
-}
-if (num1 <0 || num2<0 || num3<0){
-  return "Hay negstivos"
-}
-
 }
 
 function esPrimo(numero) {
@@ -196,13 +190,6 @@ function doWhile(numero) {
   //Implementar una función tal que vaya aumentando el valor recibido en 5 hasta un límite de 8 veces
   //Retornar el valor final.
   //Usar el bucle do ... while.
-
-do {
-  numero=numero+1;
-  numero * 5
-
-
-}while (numero * 5);
 
 
 }
