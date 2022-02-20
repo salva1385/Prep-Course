@@ -24,7 +24,7 @@ function mayoriaDeEdad(edad) {
   if (edad >= 18){
     return "Allowed" ;
   }
-  return "Not allowed";
+    return "Not allowed";
 }
   
 function conection(status) {
@@ -51,16 +51,16 @@ function saludo(idioma) {
   // Si "idioma" no es ninguno de los anteiores o es `undefined` devuelve "Hola!"
   // Tu código:
 if (idioma=== "aleman"){
-  return "Guten Tag!";
+    return "Guten Tag!";
 }
-else if (idioma==="mandarin"){
-  return "Ni Hao!";
+  else if (idioma==="mandarin"){
+    return "Ni Hao!";
 }
-else if (idioma==="ingles"){
-  return "Hello!";
+  else if (idioma==="ingles"){
+    return "Hello!";
 }
-else {
-  return "Hola!";
+    else {
+      return "Hola!";
 }
 }
 
@@ -98,7 +98,7 @@ function esDiezOCinco(numero) {
 if (numero === 10 || numero === 5) {
   return true;
 }
-return false;
+  return false;
 }
 
 function estaEnRango(numero) {
@@ -108,7 +108,7 @@ function estaEnRango(numero) {
 if (numero < 50 &&  numero > 20){
   return true
 }
-return false
+  return false
 
 }
 
@@ -124,7 +124,7 @@ function esEntero(numero) {
 if (numero % 1===0){
   return true
 }
-return false
+  return false
 
 
 }
@@ -137,15 +137,15 @@ function fizzBuzz(numero) {
   // no lograba el fizzbuzz y tuve que mirar las respuestas, y vi como todos los if quedan envueltos
   // en el las llaves de la funcion, yo estaba usado if y else if y no me funcionaba
   if (numero % 15===0)
-  return "Fizzbuzz";
+    return "fizzbuzz";
 
   if (numero % 3===0)
-  return  "fizz";
+    return  "fizz";
 
   if (numero % 5===0 )
-  return "buzz";
+      return "buzz";
 
-else   return numero;
+        else   return numero;
 
 }
 
@@ -156,6 +156,21 @@ function operadoresLogicos(num1, num2, num3) {
   //Si num3 es más grande que num1 y num2, aumentar su valor en 1 y retornar el nuevo valor.
   //0 no es ni positivo ni negativo. Si alguno de los argumentos es 0, retornar "Error".
   //Si no se cumplen ninguna de las condiciones anteriores, retornar false. 
+  // en el npm test me da error, pero no entiendo el por que, ya que me funciona como pide el ejercicio
+  if (num1 > num2 &&  num1>num3 && num1>0){
+  return "Número 1 es mayor y positivo";
+}
+    else if (num1 < 0 || num2 < 0 || num3 < 0){
+      return "Hay negativos";
+}
+    else if (num3 > num1 && num3 > num2){
+      return num3 + 1 ;
+}
+    else if (num1 === 0 || num2 === 0 || num3 === 0){
+      return "Error";
+}
+        else {return false;
+        }
 
 }
 
@@ -165,17 +180,18 @@ function esPrimo(numero) {
   // Pista: un número primo solo es divisible por sí mismo y por 1
   // Pista 2: Puedes resolverlo usando un bucle `for`
   // Nota: Los números 0 y 1 NO son considerados números primos
-
-if (numero >=2 ) return true
-if (numero ===0 || numero === 1) return false
-
-for (var i=2; i>=numero ; i++ ) {
-return i;
+  //no lograba resolverlo tuve que ver el ejercicio resuelto para entenderlo
+if (numero < 2 ) return false;
+if (numero === 2 ) return true;
+for (var i = 2; i < numero; i++){
+  if (numero % i === 0 ){
+    return false;
+  }
+  }
+  return true;
 
 }
 
-
-}
 
 function esVerdadero(valor){
   //Escribe una función que reciba un valor booleano y retorne “Soy verdadero” 
@@ -185,7 +201,7 @@ function esVerdadero(valor){
 if (valor === true)
 return "Soy verdadero";
 if (valor === false)
- return "Soy Falso";
+ return "Soy falso";
 
 }
 
@@ -193,12 +209,26 @@ function tablaDelSeis(){
   //Escribe una función que muestre la tabla de multiplicar del 6 (del 0 al 60).
   //La función devuelve un array con los resultados de la tabla de multiplicar del 6 en orden creciente.
   //Escribe tu código aquí   
-  
+  // no lo podia resolver. tuve que ver los ejercicios resueltos para encontrarle la forma.
+ 
+var arrayTablaDel6=[]
+for (var i=0; i<11; i++){
+  arrayTablaDel6.push(6*i)
+}
+return arrayTablaDel6;
+
+
 }
 
 function tieneTresDigitos(numero){
   //Leer un número entero y retornar true si tiene 3 dígitos. Caso contrario, retorna false.
   //Escribe tu código aquí
+if (numero > 99 && numero <1000){
+  return true;
+} 
+
+else {return false
+}
 
 }
 
@@ -206,8 +236,20 @@ function doWhile(numero) {
   //Implementar una función tal que vaya aumentando el valor recibido en 5 hasta un límite de 8 veces
   //Retornar el valor final.
   //Usar el bucle do ... while.
+  // no le encontraba la forma de hacerlo. tuve que ver las respuestas para entederlo
+ var a = numero
+ var i = 0
+ do{
+   i=i + 1;
+   a=a+5;
 
+ }
+ while (i<8);
+ return a;
 }
+ 
+ 
+ 
 
 
 // No modificar nada debajo de esta línea
